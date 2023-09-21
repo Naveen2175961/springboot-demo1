@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random grids</title>
+    <style>
+        *{box-sizing: border-box;}
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container div{
+            background-color: rebeccapurple;
+            margin: 10px;
+            border: 5px solid red;
+            padding: 20px;
+            height: 400px;
+
+        }
+
+        .container div:nth-child(odd) {
+            width: 10%;
+        }
+
+        .container div:nth-child(even) {
+            width: 20%;
+        }
+
+        .container div:nth-child(2),
+        .container div:nth-child(4),
+        .container div:nth-child(9), 
+        .container div:nth-child(11) {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div></div>
+        <div><p>hi </p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><p>hello</p></div>
+        <div></div>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100vw auto;
+            height: 100vh;
+            background-color: blueviolet;
+
+        }
+
+        /* mobile upto 425px */
+        @media screen and (max-width:426px){
+            div{
+                background-color: chartreuse;
+                color: #fff;
+            }
+        }
+
+        /* tab uptp 768px */
+        @media (min-width:426px) and (max-width:768px){
+            div{
+                background-color : brown;
+                color: #fff;
+            }
+        }
+
+        /* laptops and desktops upto 1024px,1440px */
+        @media (min-width:769px) and (max-width:1440px){
+            div{
+                background-color:blue;
+                color: #fff;
+            }
+        }
+
+        /* 4k devices upto 2560px */
+        @media (min-width:1441px) and (max-width:2560px){
+            div{
+                background-color: red;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>media query</h1>
+    <div></div>
+</body>
+</html>

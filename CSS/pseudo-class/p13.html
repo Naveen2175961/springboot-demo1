@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+        }
+
+        #s1,#s2,#s3 {
+            height: 300px;
+            width: 100%;
+           /*  background-color: chartreuse;  */
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #222;
+        }
+
+        div:target {
+            background-color: coral;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>:target</h3>
+
+    <nav>
+        <a href="#s1">Section 1</a>
+        <a href="#s2">Section 2</a>
+        <a href="#s3">Section 3</a>
+
+        <section>
+            <div id="s1">
+                <h1>Section 1</h1>
+            </div>
+            <div id="s2">
+                <h1>Section 2</h1>
+            </div>
+            <div id="s3">
+                <h1>Section 3</h1>
+            </div>
+        </section>
+    </nav>
+</body>
+</html>

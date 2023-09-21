@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* value must be present at the begining position */
+        ul li[class ^= 'a'] {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* value must be present at the end */
+        ul li[class $= 'a'] {
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        [attribute ^= value] and [attribute $= value] 
+    </h3>
+
+    <ul>
+        <li class="a_sec">item 1</li>
+        <li class="a-sec">item 2</li>
+        <li class="a blk">item 3</li>
+        <li class="a">item 4</li>
+        <li class="last_a">item 5</li>
+        <li class="last-a">item 6</li>
+    </ul>
+</body>
+</html>
